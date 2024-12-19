@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #e8abe8;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #e092bf;
+        }
+    </style>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Fakultas</th>
+                <th>Singkatan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% prodis.forEach(prodi => { %>
+                <tr>
+                    <td><%= prodi.nama %></td>
+                    <td><%= prodi.fakultas %></td>
+                    <td><%= prodi.singkatan %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>

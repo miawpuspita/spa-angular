@@ -1,0 +1,13 @@
+<h1> Fakultas </h1>
+<table class="table tabel-striped">
+    <tr>
+        <th>Fakultas</th>
+        <th>Singkatan</th>
+    </tr>
+    <% fakultas.forEach(data => { %>
+    <tr>
+        <td><%= data.nama %></td>
+        <td><%- data.singkatan%></td>
+    </tr>
+    <% }) %>
+</table>
