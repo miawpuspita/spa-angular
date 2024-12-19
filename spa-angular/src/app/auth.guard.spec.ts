@@ -13,6 +13,7 @@ describe('AuthGuard', () => {
     });
     guard = TestBed.inject(AuthGuard);
     routerSpy = TestBed.inject(Router) as jasmine.SpyObj<Router>;
+    
   });
 
   it('should allow navigation if token exists', () => {
